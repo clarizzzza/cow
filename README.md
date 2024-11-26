@@ -1,2 +1,3 @@
 # cow
-what is this bruh
+click cow, cow big
+click cow again, cow small
