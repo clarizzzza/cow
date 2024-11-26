@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Optional: Add a background color */
 }
 
 .clickable-image {
