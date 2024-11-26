@@ -1,48 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px;
+    margin-top: 50px;
 }
 
 .clickable-image {
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease-in-out;
 }
 
-.clickable-image:hover {
-    transform: scale(1.1);
-}
-
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#enlarged-image {
-    max-width: 90%;
-    max-height: 90%;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-
-.hidden {
-    display: none;
+.clickable-image.enlarged {
+    transform: scale(2); /* Scale image to 2x size */
 }
 
