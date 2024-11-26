@@ -1,19 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const images = document.querySelectorAll(".clickable-image");
-    const overlay = document.getElementById("overlay");
-    const enlargedImage = document.getElementById("enlarged-image");
+// Select the image element
+const image = document.getElementById('image');
 
-    // Add click event listener to each image
-    images.forEach(image => {
-        image.addEventListener("click", () => {
-            enlargedImage.src = image.src; // Set the clicked image's source
-            overlay.classList.remove("hidden"); // Show the overlay
-        });
-    });
-
-    // Add click event listener to overlay to close the enlarged image
-    overlay.addEventListener("click", () => {
-        overlay.classList.add("hidden"); // Hide the overlay
-    });
+// Add a click event listener to the image
+image.addEventListener('click', () => {
+    // Toggle the 'enlarged' class on click
+    image.classList.toggle('enlarged');
 });
-
